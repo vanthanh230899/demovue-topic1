@@ -1,0 +1,11 @@
+root = true
+
+[*]
+charset = utf-8 
+indent_style = space # định dạng thụt lề văn bản: space, tab
+indent_size = 2 # kích cở thụt lề văn bản: một số nguyên dương, tab
+end_of_line = lf # định dạng tệp kết thúc dòng
+insert_final_newline = true # khoảng trằng có được cuối dòng hay không: true , false
+trim_trailing_whitespace = true # cho biết tệp kết thúc bằng đòng mới hay không: true, false
+
+# thiết lập style cho tất cả các file

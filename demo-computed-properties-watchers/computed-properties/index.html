@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Computed Properties</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+      <div class="container pt-3">
+            <div id="computed_properties">
+                  <label>Họ: </label><input type="text" v-model="firstname">
+                  <label>Tên: </label><input type="text" v-model="lastname">
+                  <br>
+                  <label>Ngày sinh: </label>
+                  <div class="form-group">
+                        <input class="w-25" type="date" name="bday" max="3000-12-31" min="1000-01-01"
+                              class="form-control" v-model="birthday">
+                  </div>
+                  <div>Tôi tên là {{firstname}} {{lastname}}.</div>
+                  <div class="text-danger">Sử dụng thuộc tính Computed Properties: {{getfullname}}.</div>
+                  <div> Ngày sinh: {{birthday}}.</div>
+
+            </div>
+      </div>
+
+      <!--file script-->
+      <script src="js/script.js"></script>
+</body>
+
+</html>

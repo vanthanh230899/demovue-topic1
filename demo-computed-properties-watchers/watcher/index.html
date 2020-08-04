@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Watcher</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+      <div class="container pt-4">
+            <div id="vue_watcher">
+                  <h2>Mini Game</h2>
+                  <p> Click vào ô dưới đây để tặng xu cho Diễm hoặc Thúy</p>
+                  <button v-on:click="addDiem()">Thêm 1 xu cho Diễm</button>
+                  <button v-on:click="addThuy()">Thêm 1 xu cho Thúy</button>
+                  <p>Diễm: <span class="text-primary">{{Diem}}</span> xu.</p>
+                  <p>Thúy: <span class="text-primary">{{Thuy}}</span> xu.</p>
+            </div>
+      </div>
+      </div>
+
+      <!--file script-->
+      <script src="js/script.js"></script>
+</body>
+
+</html>
